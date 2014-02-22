@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.quartz</groupId>
+    <artifactId>parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.1-SNAPSHOT</version>
+    <!--<name>parent</name>-->
+    <!--<url>http://maven.apache.org</url>-->
+
+    <repositories>
+        <repository>
+            <id>QuartzRepo</id>
+            <url>file://C:/Maven/QuartzRepo</url>
+        </repository>
+<!--
+        <repository>
+            <id>QuartzSnapshots</id>
+            <url>file://C:/Maven/QuartzSnapshots</url>
+        </repository>
+-->
+    </repositories>
+
+    <distributionManagement>
+
+<!--
+        <snapshotRepository>
+            <uniqueVersion>true</uniqueVersion>
+            <id>QuartzSnapshots</id>
+            <name>Quartz Snapshots Repository</name>
+            <url>file://C:/Maven/QuartzSnapshots</url>
+            <layout>legacy</layout>
+        </snapshotRepository>
+-->
+        <repository>
+            <uniqueVersion>true</uniqueVersion>
+            <id>QuartzRepo</id>
+            <name>Quartz Repository</name>
+            <url>file://C:/Maven/QuartzRepo</url>
+            <layout>legacy</layout>
+        </repository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:svn:svn://dns323/com/quartz/parent/trunk</connection>
+    </scm>
+    
+</project>
